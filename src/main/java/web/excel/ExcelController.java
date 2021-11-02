@@ -24,7 +24,7 @@ public class ExcelController {
 	@GetMapping("/")
 	public String home() {
 		//löschen Datei falls sie nicht gedownloadet wurde
-		File file = new File("ergebnisse.xlsx");
+		File file = new File("tmp.xlsx");
 		if(file.exists()) {
 			file.delete();
 		}
@@ -43,7 +43,7 @@ public class ExcelController {
 				//übergen die Datei an eine Helferklasse die die Verwertung übernimmt
 				ExcelConverter conv = new ExcelConverter(file);
 				Workbook resultWb = conv.excel();
-				OutputStream fileOut = new FileOutputStream("ergebnisse.xlsx");
+				OutputStream fileOut = new FileOutputStream("tmp.xlsx");
 				resultWb.write(fileOut);
 				fileOut.close();
 			}
@@ -60,11 +60,12 @@ public class ExcelController {
 	@GetMapping("/download")
 	public void dowloadAndDelete(HttpServletResponse response) throws IOException {
 		
-	    File file = new File("ergebnisse.xlsx");
+	    File file = new File("tmp.xlsx");
+	    String filename = "ergebnisse.xlsx";
 	    
 	    //Setzen Response Header für den File Download
 	    response.setContentType("application/vnd.ms-excel");
-	    response.setHeader("Content-disposition", "attachment; filename=" + file.getName());
+	    response.setHeader("Content-disposition", "attachment; filename=" + filename);
 
 	    OutputStream out = response.getOutputStream();
 	    FileInputStream in = new FileInputStream(file);
