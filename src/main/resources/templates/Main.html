@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<!-- Nutze ein CSS Template von www.w3schools.com/w3css/w3css_templates.asp  -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button,form {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<head>
+<meta charset="ISO-8859-1">
+<title>Excel Rechner</title>
+</head>
+
+<!-- Header -->
+<header class="w3-container w3-green w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">EXCEL RECHNER</h1>
+  <p class="w3-xlarge">Gib eine .xlsx Datei im Format Operand | Operator | Operand an.</p>
+  <form method="post" action="upload" enctype="multipart/form-data">
+<input type="file" name="uploadFile" accept=".xlsx" />
+<br><br>
+<input type="submit" value="Berechnen" />
+</form>
+</header>
+
+</html>
