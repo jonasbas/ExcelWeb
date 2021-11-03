@@ -16,6 +16,10 @@ import org.springframework.web.multipart.MultipartFile;
 public class ExcelConverter {
 	private MultipartFile file;
 	
+	ExcelConverter(){
+		file = null;
+	}
+	
 	ExcelConverter(MultipartFile f){
 		file = f;
 	}
@@ -64,7 +68,7 @@ public class ExcelConverter {
 	}
 	
 	//kontrollieren welcher Operator genutzt wird und geben das Ergebniss zurück
-	private double doMath(double firstOperand, double secondOperand, String operator) {
+	public double doMath(double firstOperand, double secondOperand, String operator) {
 		switch(operator) {
 			case "+" : return firstOperand + secondOperand; 
 			case "-" : return firstOperand - secondOperand;
