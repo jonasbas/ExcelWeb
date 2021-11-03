@@ -15,15 +15,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <title>Excel Rechner</title>
 </head>
 
-<!-- Header -->
+<!-- Home Seite  -->
 <header class="w3-container w3-green w3-center" style="padding:128px 16px">
   <h1 class="w3-margin w3-jumbo">EXCEL RECHNER</h1>
   <p class="w3-xlarge">Gib eine .xlsx Datei im Format Operand | Operator | Operand an.</p>
+  <!-- Übergibt angegegbene Datei an das Programm  -->
   <form method="post" action="upload" enctype="multipart/form-data">
-<input type="file" name="uploadFile" accept=".xlsx" />
-<br><br>
-<input type="submit" value="Berechnen" />
-</form>
+	<input type="file" name="uploadFile" accept=".xlsx" />
+	<br><br>
+	<input type="submit" value="Berechnen" />
+  </form>
 </header>
 
 </html>

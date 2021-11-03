@@ -63,6 +63,7 @@ public class ExcelConverter {
 		return newWb;
 	}
 	
+	//kontrollieren welcher Operator genutzt wird und geben das Ergebniss zurück
 	private double doMath(double firstOperand, double secondOperand, String operator) {
 		switch(operator) {
 			case "+" : return firstOperand + secondOperand; 

@@ -57,6 +57,7 @@ public class ExcelController {
 		return "Download.html";
 	}
 	
+	//Request für den File Download der neuen Exceldatei
 	@GetMapping("/download")
 	public void dowloadAndDelete(HttpServletResponse response) throws IOException {
 		
