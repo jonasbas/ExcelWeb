@@ -1,5 +1,11 @@
 # Excel Webanwendung
-Startet einen Web Service,die es dem Nutzer ermöglicht Aufgaben berechnen zu lassen . Als Eingabe dient eine Excel Datei (.xlsx). Sie enthält in einer Zeile je zwei Operanden und einen Operator im Format Operand | Operator | Operand.  Als Ausgabe wird eine neue Excel Datei mit den Ergebnissen erstellt und über dem Browser heruntergeladen.
+Startet einen Web Service,die es dem Nutzer ermöglicht Aufgaben berechnen zu lassen . Als Eingabe dient eine Excel Datei (.xlsx). Sie enthält in einer Zeile je zwei Operanden und einen Operator im Format Operand | Operator | Operand.  
+
+
+
+![](C:\Users\joach\Downloads\excel\excel\example.PNG)
+
+Als Ausgabe wird eine neue Excel Datei mit den Ergebnissen erstellt und über dem Browser heruntergeladen.
 
 Um die Anwendung selbst zu bauen und zu starten: 
 
