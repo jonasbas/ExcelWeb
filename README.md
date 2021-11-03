@@ -17,4 +17,5 @@ Um die Anwendung selbst zu bauen und zu starten:
 Ansonsten aktuellen Release herunterladen und dann 
 
 + java -jar excel-1.0.jar 
++ localhost:8080 aufrufen
 
