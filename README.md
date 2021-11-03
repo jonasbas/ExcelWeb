@@ -3,7 +3,7 @@ Startet einen Web Service,die es dem Nutzer ermöglicht Aufgaben berechnen zu la
 
 
 
-![](C:\Users\joach\Downloads\excel\excel\example.PNG)
+![](example.PNG)
 
 Als Ausgabe wird eine neue Excel Datei mit den Ergebnissen erstellt und über dem Browser heruntergeladen.
 
